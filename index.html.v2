@@ -1,55 +1,50 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>My Website</title>
+    <title>My GitHub Website</title>
     <style>
-        /* Set background image */
         body {
-            background-image: url('https://images.unsplash.com/photo-1506102383123-c8ef1e872756?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60');
+            background-image: url('background.jpg'); /* Replace 'background.jpg' with the path to your background image */
             background-size: cover;
             background-position: center;
         }
-
-        /* Center align the options */
+        .container {
+            text-align: center;
+            padding-top: 200px; /* Adjust the padding as needed */
+        }
+        h1 {
+            color: white;
+            font-size: 36px;
+        }
         .options {
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            margin-top: 20px;
         }
-
-        /* Style the buttons */
-        .options button {
+        .option {
             margin: 0 10px;
-            padding: 10px 20px;
-            font-size: 18px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            cursor: pointer;
         }
-
-        /* Style the buttons on hover */
-        .options button:hover {
-            background-color: #666;
+        .option a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            padding: 10px 20px;
+            background-color: #007BFF; /* Change the background color as needed */
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="options">
-        <button onclick="goToMenu()">MENU</button>
-        <button onclick="goToBranch()">BRANCH</button>
+    <div class="container">
+        <h1>Welcome to My Website</h1>
+        <div class="options">
+            <div class="option">
+                <a href="#menu">MENU</a>
+            </div>
+            <div class="option">
+                <a href="#branch">BRANCH</a>
+            </div>
+        </div>
     </div>
-
-    <script>
-        function goToMenu() {
-            // Redirect to menu page
-            window.location.href = "menu.html";
-        }
-
-        function goToBranch() {
-            // Redirect to branch page
-            window.location.href = "branch.html";
-        }
-    </script>
 </body>
 </html>
